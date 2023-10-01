@@ -56,7 +56,7 @@ describe("Loan model", () => {
     expect(savedLoanWithInvalidField.loanEndDate).toBeUndefined();
   });
 
-  // It should us tell us the errors in on email field.
+ // Should not be able to create customerLoan without require fields
   it("create loan without required field should failed", async () => {
     const loanWithoutRequiredField = new CustomerLoan({ customerName: "John" });
     let err;
