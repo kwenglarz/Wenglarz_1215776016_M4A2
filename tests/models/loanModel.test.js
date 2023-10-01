@@ -44,7 +44,7 @@ describe("Loan model", () => {
   });
 
   // You shouldn't be able to add in any field that isn't defined in the schema
-  it("insert user successfully, but the field not defined in schema should be undefined", async () => {
+  it("insert loan successfully, but the field not defined in schema should be undefined", async () => {
     const loanWithInvalidField = new CustomerLoan({
       ...loanData,
       loanEndDate: Date.now,
