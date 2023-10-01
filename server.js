@@ -1,8 +1,6 @@
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
-// const express = require('express');
 const app = require('./app');
-// const morgan = require('morgan');    //Use morgan for logging purposes
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
